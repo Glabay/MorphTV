@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MainButton">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:padding">5.0dip</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">150.0dip</item>
+    </style>
+    <style name="MainButton_Image">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">80.0dip</item>
+        <item name="android:layout_height">80.0dip</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:adjustViewBounds">false</item>
+    </style>
+    <style name="MovieList_Poster">
+        <item name="android:background">@drawable/movie_background</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:layout_width">@dimen/movielist_col_width</item>
+        <item name="android:layout_height">170.0dip</item>
+        <item name="android:src">@drawable/poster</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="MovieList_Title">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_overlay_text_color</item>
+        <item name="android:gravity">start|center|top</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">2</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="MovieList_Year">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black_overlay_text_color</item>
+        <item name="android:gravity">end|center</item>
+        <item name="android:background">@color/black_overlay</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">1.0dip</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">3.0</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">5.0</item>
+        <item name="android:paddingStart">5.0dip</item>
+        <item name="android:paddingEnd">5.0dip</item>
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_alignParentEnd">true</item>
+    </style>
+    <style name="MovieSources_Poster">
+        <item name="android:background">@drawable/movie_background</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:layout_width">200.0dip</item>
+        <item name="android:layout_height">320.0dip</item>
+        <item name="android:src">@drawable/poster</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+    <style name="ShowSources_Poster">
+        <item name="android:background">@drawable/movie_background</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:layout_width">320.0dip</item>
+        <item name="android:layout_height">200.0dip</item>
+        <item name="android:src">@drawable/poster</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_autosel_movies_title" />
+    <SwitchPreference android:title="@string/pref_autosel_title" android:key="prefSourceAutoSel" android:summary="@string/pref_autosel_title_summary" android:defaultValue="false" />
+    <MultiSelectListPreference android:entries="@array/pref_autoplay_quality_names" android:title="@string/pref_autosel_source_qualtity" android:key="prefSourceAutoSelQualityMoviesList" android:defaultValue="@array/pref_autoplay_quality_defaults" android:dialogTitle="@string/pref_autosel_source_qualtity" android:entryValues="@array/pref_autoplay_quality_names" />
+    <MultiSelectListPreference android:entries="@array/pref_autoplay_host_names" android:title="@string/pref_autosel_source_host" android:key="prefSourceAutoSelHostMoviesList" android:defaultValue="@array/pref_autoplay_quality_defaults" android:dialogTitle="@string/pref_autosel_source_host" android:entryValues="@array/pref_autoplay_host_names" />
+    <CheckBoxPreference android:title="@string/pref_autosel_source_fast" android:key="prefSourceAutoSelMoviesFast" android:summary="@string/pref_autosel_source_fast_summary" android:defaultValue="true" />
+    <PreferenceCategory android:title="@string/pref_autosel_shows_title" />
+    <SwitchPreference android:title="@string/pref_autosel_title" android:key="prefSourceAutoSelShows" android:summary="@string/pref_autosel_title_summary" android:defaultValue="false" />
+    <MultiSelectListPreference android:entries="@array/pref_autoplay_quality_names" android:title="@string/pref_autosel_source_qualtity" android:key="prefSourceAutoSelQualityShowsList" android:defaultValue="@array/pref_autoplay_quality_defaults" android:dialogTitle="@string/pref_autosel_source_qualtity" android:entryValues="@array/pref_autoplay_quality_names" />
+    <MultiSelectListPreference android:entries="@array/pref_autoplay_host_names" android:title="@string/pref_autosel_source_host" android:key="prefSourceAutoSelHostShowsList" android:defaultValue="@array/pref_autoplay_quality_defaults" android:dialogTitle="@string/pref_autosel_source_host" android:entryValues="@array/pref_autoplay_host_names" />
+    <CheckBoxPreference android:title="@string/pref_autosel_source_fast" android:key="prefSourceAutoSelShowsFast" android:summary="@string/pref_autosel_source_fast_summary" android:defaultValue="true" />
+</PreferenceScreen>

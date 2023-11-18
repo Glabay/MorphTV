@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_category_torrent_options" />
+    <SwitchPreference android:title="@string/pref_source_TORRENTS" android:key="pref_source_TORRENTS" android:defaultValue="false" />
+    <com.github.angads25.filepicker.view.FilePickerPreference android:title="@string/pref_torrent_downloadfolderTitle" android:key="prefTorrentsDownloadFolder" android:defaultValue="/sdcard/Download" app:error_dir="/" app:extensions="mkv:avi:mp4" app:offset_dir="" app:root_dir="/" app:selection_mode="single_mode" app:selection_type="dir_select" app:title_text="@string/pref_torrent_downloadfolderTitle2" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <SwitchPreference android:title="@string/pref_torrent_removedownload" android:key="prefTorrentsRemoveDownloads" android:summary="@string/pref_torrent_removedownloadsummary" android:defaultValue="true" />
+    <ListPreference android:entries="@array/pref_torrent_maxconnections_values" android:title="@string/pref_torrent_maxconnections" android:key="prefTorrentsMaxConnections" android:defaultValue="150" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_torrent_maxconnections_values" />
+    <ListPreference android:entries="@array/pref_torrent_speed_values" android:title="@string/pref_torrent_download_limit" android:key="prefTorrentsDownloadLimit" android:defaultValue="Unlimited" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_torrent_speed_values" />
+    <ListPreference android:entries="@array/pref_torrent_speed_values" android:title="@string/pref_torrent_upload_limit" android:key="prefTorrentsUploadLimit" android:defaultValue="Unlimited" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_torrent_speed_values" />
+    <ListPreference android:entries="@array/pref_torrent_size_values" android:title="@string/pref_torrent_maxsize_movies" android:key="prefTorrentsSizeMovies" android:defaultValue="All" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_torrent_size_values" />
+    <ListPreference android:entries="@array/pref_torrent_size_values" android:title="@string/pref_torrent_maxsize_shows" android:key="prefTorrentsSizeShows" android:defaultValue="All" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_torrent_size_values" />
+    <PreferenceCategory android:title="@string/pref_category_providers_list_torrent" />
+    <SwitchPreference android:title="@string/pref_provider_RARBG" android:key="pref_provider_RARBG" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_EZTV" android:key="pref_provider_EZTV" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_YIFY" android:key="pref_provider_YIFY" android:defaultValue="true" />
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_player_options" />
+    <ListPreference android:entries="@array/pref_buffering_list" android:title="@string/pref_title_playback_buffering" android:key="prefBufferForPlayback" android:defaultValue="2" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_buffering_list" />
+    <ListPreference android:entries="@array/pref_buffering_list" android:title="@string/pref_title_min_buffering" android:key="prefMinBufferSize" android:defaultValue="15" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_buffering_list" />
+    <ListPreference android:entries="@array/pref_buffering_list" android:title="@string/pref_title_max_buffering" android:key="prefMaxBufferSize" android:defaultValue="30" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_buffering_list" />
+    <SwitchPreference android:title="@string/pref_proxy_streams" android:key="prefProxyStreams" android:summary="@string/pref_proxy_streams_summary" android:defaultValue="false" />
+    <ListPreference android:entries="@array/pref_cast_app_names" android:title="@string/pref_title_cast_app" android:key="prefCastReceiver" android:defaultValue="3B221EB7" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_cast_app_ids" />
+</PreferenceScreen>

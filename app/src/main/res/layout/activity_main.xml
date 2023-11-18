@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backdropImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/poster" android:scaleType="centerCrop" />
+    <View android:background="@color/gray_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/castMiniController">
+        <View android:id="@id/centerline" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_centerVertical="true" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/buttonRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/centerline" android:layout_centerHorizontal="true">
+            <LinearLayout android:id="@id/btnMovies" android:onClick="Movies" style="@style/MainButton">
+                <ImageView android:id="@id/imgMovies" android:src="@drawable/movies" style="@style/MainButton_Image" />
+                <TextView android:id="@id/titleMovies" android:text="@string/movies" style="@style/MainButton_Text" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/btnShows" android:onClick="Shows" style="@style/MainButton">
+                <ImageView android:id="@id/imgShows" android:src="@drawable/tvshows" style="@style/MainButton_Image" />
+                <TextView android:id="@id/titleShows" android:text="@string/shows" style="@style/MainButton_Text" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/buttonRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/centerline" android:layout_centerHorizontal="true">
+            <LinearLayout android:id="@id/btnDownloads" android:onClick="Downloads" style="@style/MainButton">
+                <ImageView android:src="@drawable/downloads" style="@style/MainButton_Image" />
+                <TextView android:text="@string/downloads" style="@style/MainButton_Text" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/btnSettings" android:onClick="Settings" style="@style/MainButton">
+                <ImageView android:src="@drawable/tools" style="@style/MainButton_Image" />
+                <TextView android:text="@string/settings" style="@style/MainButton_Text" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/btnWatchNext" android:visibility="visible" android:layout_width="110.0dip" android:layout_height="40.0dip" android:layout_below="@id/buttonRow2" android:layout_centerHorizontal="true" android:onClick="WatchNext" android:layout_marginEnd="10.0dip" style="@style/MainButton">
+            <TextView android:textSize="12.0sp" android:textStyle="normal" android:gravity="center" android:layout_gravity="start|center" android:text="@string/episodes_next" style="@style/MainButton_Text" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/videoScraperContainer" android:layout_centerHorizontal="true">
+            <Button android:id="@id/update_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/OutlineButton" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/updateProgress" android:visibility="gone" android:layout_width="200.0dip" android:layout_height="wrap_content" style="@style/OutlineButton">
+                <TextView android:textSize="12.0sp" android:textStyle="bold" android:gravity="start" android:id="@id/downloadStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/MediaOverviewText" />
+                <ProgressBar android:id="@id/progressBar" android:layout_width="fill_parent" android:layout_height="5.0dip" style="?android:progressBarStyleHorizontal" />
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:gravity="start" android:id="@id/downloadProgress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/MediaOverviewText" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/videoScraperContainer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_above="@id/buttonRow1" android:layout_centerHorizontal="true">
+            <TextView android:gravity="center_horizontal" android:id="@id/videoscraperStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/versioncontainer" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true">
+            <TextView android:textStyle="italic" android:gravity="end" android:id="@id/app_version" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MediaOverviewText" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/btnInfo" android:visibility="gone" android:layout_width="110.0dip" android:layout_height="40.0dip" android:layout_above="@id/versioncontainer" android:onClick="Information" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" style="@style/MainButton">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_info_outline_white_48dp" style="@style/MainButton_Image" />
+            <TextView android:textSize="12.0sp" android:textStyle="normal" android:gravity="start|center" android:layout_gravity="start|center" android:text="@string/about" style="@style/MainButton_Text" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/trakt_sync_notification" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/sync_img_size" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true" android:layout_marginStart="10.0dip" android:layout_alignParentStart="true">
+            <ImageView android:id="@id/synclogo" android:layout_width="@dimen/sync_img_size" android:layout_height="@dimen/sync_img_size" android:src="@drawable/trakt" style="@style/MainButton_Image" />
+            <TextView android:gravity="start|center" android:layout_height="fill_parent" android:text="@string/trakt_sync" android:layout_toEndOf="@id/synclogo" style="@style/MediaOverviewText" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/downloadBarButton" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentTop="true" android:layout_toStartOf="@id/media_route_button" layout="@layout/downloads_button" />
+    <android.support.v7.app.MediaRouteButton android:id="@id/media_route_button" android:background="@drawable/button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <ViewStub android:id="@id/cast_minicontroller" android:layout="@layout/cast_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

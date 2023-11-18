@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_myshows_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backdropImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/poster" android:scaleType="centerCrop" />
+    <View android:background="@color/gray_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/castMiniController">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/breadcrumb" android:layout_width="wrap_content" android:layout_height="@dimen/breadcrumb_height" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/breadcrumb_margin" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+            <ImageView android:id="@id/breadcrumb_image" android:layout_height="@dimen/breadcrumb_height" android:src="@drawable/trakt" android:scaleType="fitCenter" style="@style/MainButton_Image" />
+            <TextView android:text="@string/my_shows" style="@style/MediaTitleText" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/buttonRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <LinearLayout android:id="@id/btnMyShows" android:onClick="Collection" style="@style/MainButton">
+                <ImageView android:src="@drawable/trakt" style="@style/MainButton_Image" />
+                <TextView android:text="@string/shows_collection" style="@style/MainButton_Text" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/btnWatchlist" android:onClick="Watchlist" style="@style/MainButton">
+                <ImageView android:src="@drawable/trakt" style="@style/MainButton_Image" />
+                <TextView android:text="@string/shows_watchlist" style="@style/MainButton_Text" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/buttonRow2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/buttonRow1" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <LinearLayout android:id="@id/btnEpisodes" android:onClick="Episodes" style="@style/MainButton">
+                <ImageView android:src="@drawable/trakt" style="@style/MainButton_Image" />
+                <TextView android:text="@string/episodes_next" style="@style/MainButton_Text" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/downloadBarButton" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentTop="true" android:layout_toStartOf="@id/media_route_button" layout="@layout/downloads_button" />
+    <android.support.v7.app.MediaRouteButton android:id="@id/media_route_button" android:background="@drawable/button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <ViewStub android:id="@id/cast_minicontroller" android:layout="@layout/cast_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:icon="@drawable/ic_play_circle_outline_white_36dp" android:title="@string/pref_header_player" android:fragment="com.android.morpheustv.settings.SettingsActivity$PlayerPreferenceFragment" />
+    <header android:icon="@drawable/exo_controls_play" android:title="@string/pref_header_autoplay" android:fragment="com.android.morpheustv.settings.SettingsActivity$AutoPlayPreferenceFragment" />
+    <header android:icon="@drawable/ic_subtitles_white_36dp" android:title="@string/pref_header_subtitles" android:fragment="com.android.morpheustv.settings.SettingsActivity$SubtitlesPreferenceFragment" />
+    <header android:icon="@drawable/ic_web_white_36dp" android:title="@string/pref_header_general" android:fragment="com.android.morpheustv.settings.SettingsActivity$GeneralPreferenceFragment" />
+    <header android:icon="@drawable/ic_storage_white_36dp" android:title="@string/pref_header_sources" android:fragment="com.android.morpheustv.settings.SettingsActivity$SourcesPreferenceFragment" />
+    <header android:icon="@drawable/downloads_icon" android:title="@string/pref_header_downloads" android:fragment="com.android.morpheustv.settings.SettingsActivity$DownloadsPreferenceFragment" />
+    <header android:icon="@drawable/magnet_bw" android:title="@string/pref_header_torrents" android:fragment="com.android.morpheustv.settings.SettingsActivity$TorrentsPreferenceFragment" />
+    <header android:icon="@drawable/ic_notifications_white_36dp" android:title="@string/pref_header_notifications" android:fragment="com.android.morpheustv.settings.SettingsActivity$NotificationsPreferenceFragment" />
+</preference-headers>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_subtitles_downloading" />
+    <SwitchPreference android:title="@string/auto_enable_subtitle" android:key="pref_subtitle_enable" android:summary="@string/auto_enable_subtitle_summary" android:defaultValue="true" />
+    <ListPreference android:entries="@array/lang_names" android:title="@string/pref_subtitle_primary_lang" android:key="prefSubtitlePrimaryLang" android:entryValues="@array/lang_values" />
+    <MultiSelectListPreference android:entries="@array/lang_names" android:title="@string/pref_subtitle_secondary_langs" android:key="prefSubtitleSecondaryLangs" android:defaultValue="@array/lang_default_values" android:dialogTitle="@string/pref_subtitle_secondary_langs" android:entryValues="@array/lang_values" />
+    <SwitchPreference android:title="@string/auto_select_subtitle" android:key="pref_subtitle_autoselect" android:summary="@string/auto_select_subtitle_summary" android:defaultValue="true" />
+    <PreferenceCategory android:title="@string/pref_category_subtitles_style" />
+    <ListPreference android:entries="@array/pref_subtitle_colors" android:title="@string/pref_subtitle_color" android:key="prefSubtitlesColor" android:defaultValue="@string/pref_subtitle_color_white" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_subtitle_colors" />
+    <ListPreference android:entries="@array/pref_subtitle_textsize_values" android:title="@string/pref_subtitle_text_size" android:key="prefSubtitlesTextSize" android:defaultValue="30" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_subtitle_textsize_values" />
+    <ListPreference android:entries="@array/pref_subtitle_bottom_distances" android:title="@string/pref_subtitle_bottom" android:key="prefSubtitlesDistance" android:defaultValue="30" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_subtitle_bottom_distances" />
+    <PreferenceCategory android:title="@string/pref_category_subtitles_providers" />
+    <SwitchPreference android:title="@string/pref_subtitle_OPENSUBTITLES" android:key="pref_subtitle_OPENSUBTITLES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_subtitle_TVSUBS" android:key="pref_subtitle_TVSUBS" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_subtitle_LEGENDASDIVX" android:key="pref_subtitle_LEGENDASDIVX" android:defaultValue="true" />
+    <EditTextPreference android:title="@string/pref_ldivx_username" android:key="prefLegendasDivxUsername" />
+    <EditTextPreference android:title="@string/pref_ldivx_password" android:key="prefLegendasDivxPassword" android:inputType="textPassword" />
+</PreferenceScreen>

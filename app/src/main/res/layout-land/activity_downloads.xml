@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backdropImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fanart" android:scaleType="centerCrop" />
+    <View android:background="@color/gray_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/breadcrumb" android:layout_width="wrap_content" android:layout_height="@dimen/breadcrumb_height" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/breadcrumb_margin" android:layout_alignParentStart="true">
+        <ImageView android:visibility="visible" android:layout_height="@dimen/breadcrumb_height" android:src="@drawable/downloads" android:scaleType="fitCenter" style="@style/MainButton_Image" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:id="@id/breadcrumb_title" android:visibility="visible" android:text="@string/downloads" style="@style/MediaTitleText" />
+            <TextView android:id="@id/breadcrumb_secondary_title" android:visibility="gone" style="@style/MediaOverviewText" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:layout_above="@id/castMiniController" android:layout_below="@id/breadcrumb">
+        <ListView android:id="@id/downloadList" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="5.0dip" android:fastScrollEnabled="false" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_list_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/castMiniController" android:layout_below="@id/breadcrumb" android:layout_centerInParent="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/loadingview" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/downloads" android:layout_centerInParent="true" />
+        <TextView android:textStyle="bold" android:gravity="center_horizontal" android:text="@string/empty_downloads" android:layout_below="@id/loadingview" android:layout_centerHorizontal="true" style="@style/MediaOverviewText" />
+    </RelativeLayout>
+    <android.support.v7.app.MediaRouteButton android:id="@id/media_route_button" android:background="@drawable/button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <ViewStub android:id="@id/cast_minicontroller" android:layout="@layout/cast_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

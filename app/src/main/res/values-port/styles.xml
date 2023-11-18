@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:windowAnimationStyle">@style/themeAnimation</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="alertDialogTheme">@style/DialogStyle</item>
+        <item name="castExpandedControllerStyle">@style/CustomCastExpandedController</item>
+        <item name="castExpandedControllerToolbarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="castMiniControllerStyle">@style/CustomCastMiniController</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="SettingsTheme" parent="@style/Theme.AppCompat">
+        <item name="android:windowFullscreen">false</item>
+        <item name="castExpandedControllerStyle">@style/CustomCastExpandedController</item>
+        <item name="castExpandedControllerToolbarStyle">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="castMiniControllerStyle">@style/CustomCastMiniController</item>
+    </style>
+</resources>

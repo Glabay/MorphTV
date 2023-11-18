@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/poster" android:layout_alignParentTop="true" android:layout_alignParentStart="true" style="@style/MovieList_Poster" />
+    <TextView android:id="@id/title" android:layout_below="@id/poster" style="@style/MovieList_Title" />
+    <TextView android:id="@id/year" android:layout_alignBottom="@id/poster" android:layout_alignStart="@id/poster" android:layout_alignEnd="@id/poster" style="@style/MovieList_Year" />
+    <RelativeLayout android:id="@id/rating_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_alignTop="@id/year" android:layout_alignBottom="@id/year" android:layout_alignStart="@id/year" android:layout_alignEnd="@id/year">
+        <TextView android:textSize="@dimen/rate_star_textsize" android:gravity="center" android:id="@id/rating" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/MediaOverviewText" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/watched" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/poster" android:layout_alignBottom="@id/poster" android:layout_alignStart="@id/poster" android:layout_alignEnd="@id/poster">
+        <View android:background="@color/gray_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true" />
+        <ImageView android:layout_width="@dimen/watched_badge_size" android:layout_height="@dimen/watched_badge_size" android:src="@drawable/watched" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

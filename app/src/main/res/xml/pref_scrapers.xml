@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_scraping_performance" />
+    <ListPreference android:entries="@array/pref_maxthreads_list" android:title="@string/pref_title_max_threads" android:key="prefMaxThreads" android:defaultValue="4" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_maxthreads_list" />
+    <ListPreference android:entries="@array/pref_timeout_thread_list" android:title="@string/pref_title_timeout_thread" android:key="prefTimeoutThread" android:defaultValue="40" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_timeout_thread_list" />
+    <ListPreference android:entries="@array/pref_timeout_list" android:title="@string/pref_title_timeout" android:key="prefTimeout" android:defaultValue="120" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_timeout_list" />
+    <PreferenceCategory android:title="@string/pref_category_providers_list_http" />
+    <SwitchPreference android:title="@string/pref_provider_FLIXANITY" android:key="pref_provider_FLIXANITY" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_CARTOONHD" android:key="pref_provider_CARTOONHD" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_FMOVIES" android:key="pref_provider_FMOVIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_GOMOVIES" android:key="pref_provider_GOMOVIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_YESMOVIEIO" android:key="pref_provider_YESMOVIEIO" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_SERIESONLINE" android:key="pref_provider_SERIESONLINE" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_PUTLOCKER" android:key="pref_provider_PUTLOCKER" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_OPENNLOADMOVIES" android:key="pref_provider_OPENLOADMOVIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_YESMOVIES" android:key="pref_provider_YESMOVIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_REDDIT" android:key="pref_provider_REDDIT" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_THEWATCHSERIES" android:key="pref_provider_THEWATCHSERIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_SOLARMOVIE" android:key="pref_provider_SOLARMOVIE" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_THEMOVIESERIES" android:key="pref_provider_THEMOVIESERIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_ICEFILMS" android:key="pref_provider_ICEFILMS" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_STREAMLORD" android:key="pref_provider_STREAMLORD" android:defaultValue="true" />
+    <EditTextPreference android:title="@string/pref_provider_STREAMLORD_username" android:key="prefSTREAMLORDUsername" />
+    <EditTextPreference android:title="@string/pref_provider_STREAMLORD_password" android:key="prefSTREAMLORDPassword" android:inputType="textPassword" />
+    <SwitchPreference android:title="@string/pref_provider_PUTLOCKERSMOVIES" android:key="pref_provider_PUTLOCKERSMOVIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_PUTSTREAM" android:key="pref_provider_PUTSTREAM" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_SERIESFREE" android:key="pref_provider_SERIESFREE" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_XWATCHSERIES" android:key="pref_provider_XWATCHSERIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_123YTS" android:key="pref_provider_123YTS" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_123RARBG" android:key="pref_provider_123RARBG" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_GOMOVIESSC" android:key="pref_provider_GOMOVIESSC" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_BMOVIESFREE" android:key="pref_provider_BMOVIESFREE" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_123MOVIESHUB" android:key="pref_provider_123MOVIESHUB" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_AFDAH" android:key="pref_provider_AFDAH" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_MOVIETOKEN" android:key="pref_provider_MOVIE4K" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_HDGO" android:key="pref_provider_HDGO" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_TV21" android:key="pref_provider_TV21" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_123NETFLIX" android:key="pref_provider_PLAYMOVIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_ODBTO" android:key="pref_provider_ODBTO" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_SCREENCOUCH" android:key="pref_provider_SCREENCOUCH" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_CINEBLOOM" android:key="pref_provider_CINEBLOOM" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_AZMOVIES" android:key="pref_provider_AZMOVIES" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_123HULU" android:key="pref_provider_123HULU" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_123MOVIESFREE" android:key="pref_provider_123MOVIESFREE" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_XMOVIES8" android:key="pref_provider_XMOVIES8" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_123MOVIESHD" android:key="pref_provider_123MOVIESHD" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_provider_123NETFLIX" android:key="pref_provider_123NETFLIX" android:defaultValue="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</PreferenceScreen>

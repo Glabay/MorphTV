@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory android:title="@string/pref_category_torrent_options" />
+    <com.github.angads25.filepicker.view.FilePickerPreference android:title="@string/pref_torrent_downloadfolderTitle" android:key="prefDownloadsDownloadFolder" android:defaultValue="/sdcard/Download" app:error_dir="/" app:extensions="mkv:avi:mp4" app:offset_dir="" app:root_dir="/" app:selection_mode="single_mode" app:selection_type="dir_select" app:title_text="@string/pref_torrent_downloadfolderTitle2" />
+    <SwitchPreference android:title="@string/pref_downloads_cellular" android:key="prefDownloadsCellular" android:defaultValue="false" />
+    <ListPreference android:entries="@array/pref_maxthreads_list" android:title="@string/pref_downloads_maxsimul" android:key="prefMaxSimulDownloads" android:defaultValue="4" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_maxthreads_list" />
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/pref_main_notification" android:key="prefMainNotification2" android:summary="@string/pref_main_notification_summary" android:defaultValue="false" />
+    <SwitchPreference android:title="@string/pref_download_notification" android:key="prefDownloadNotifications2" android:summary="@string/pref_download_notification_summary" android:defaultValue="false" />
+</PreferenceScreen>

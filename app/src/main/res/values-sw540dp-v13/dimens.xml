@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="breadcrumb_height">80.0dip</dimen>
+    <dimen name="episodelist_col_height">90.0dip</dimen>
+    <dimen name="episodelist_col_width">180.0dip</dimen>
+    <dimen name="media_info_overview_size">15.0sp</dimen>
+    <dimen name="media_info_panel_width">350.0dip</dimen>
+    <dimen name="media_info_title_size">18.0sp</dimen>
+    <dimen name="movielist_col_width">135.0dip</dimen>
+    <dimen name="rate_star_height">50.0dip</dimen>
+    <dimen name="rate_star_textsize">14.0sp</dimen>
+    <dimen name="source_line_height">60.0dip</dimen>
+    <dimen name="subtitle_textsize">38.0sp</dimen>
+    <dimen name="sync_img_size">40.0dip</dimen>
+    <dimen name="watched_badge_size">30.0dip</dimen>
+</resources>

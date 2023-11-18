@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_category_sources_options" />
+    <ListPreference android:entries="@array/source_list_group" android:title="@string/pref_sourcelist_grouping" android:key="prefSourceGroup" android:defaultValue="@string/pref_sourcelist_grouping_host" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/source_list_group" />
+    <ListPreference android:entries="@array/pref_maxsources_list" android:title="@string/pref_title_max_sources" android:key="prefMaxSourcesProvider" android:defaultValue="5" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_maxsources_list" />
+    <SwitchPreference android:title="@string/pref_validate_sources" android:key="prefVerifySources" android:summary="@string/pref_validate_sources_summary" android:defaultValue="true" />
+    <ListPreference android:entries="@array/pref_timeout_verify_list" android:title="@string/pref_validate_sources_timeout" android:key="prefTimeoutVerify" android:defaultValue="8" android:positiveButtonText="@null" android:negativeButtonText="@null" android:entryValues="@array/pref_timeout_verify_list" />
+    <PreferenceCategory android:title="@string/pref_category_sources_list" />
+    <SwitchPreference android:title="@string/pref_source_GVIDEO" android:key="pref_source_GVIDEO" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_OPENLOAD" android:key="pref_source_OPENLOAD" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_STREAMANGO" android:key="pref_source_STREAMANGO" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_THEVIDEO" android:key="pref_source_THEVIDEO" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_VIDUP" android:key="pref_source_VIDUP" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_VIDOZA" android:key="pref_source_VIDOZA" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_ENTERVIDEO" android:key="pref_source_ENTERVIDEO" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_STRMGOHLS" android:key="pref_source_STRMGOHLS" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_LEMONHLS" android:key="pref_source_LEMONHLS" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_MCLOUDHLS" android:key="pref_source_MCLOUDHLS" android:defaultValue="true" />
+    <SwitchPreference android:title="@string/pref_source_OTHERS" android:key="pref_source_OTHERS" android:defaultValue="true" />
+</PreferenceScreen>

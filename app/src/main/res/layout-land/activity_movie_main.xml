@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/activity_movie_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/backdropImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/fanart" android:scaleType="centerCrop" />
+    <View android:background="@color/gray_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/castMiniController">
+        <LinearLayout android:gravity="center|left" android:orientation="horizontal" android:id="@id/breadcrumb" android:layout_width="wrap_content" android:layout_height="@dimen/breadcrumb_height" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/breadcrumb_margin" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+            <ImageView android:layout_height="@dimen/breadcrumb_height" android:src="@drawable/movies" android:scaleType="fitCenter" style="@style/MainButton_Image" />
+            <TextView android:text="@string/movies" style="@style/MediaTitleText" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/breadcrumb">
+            <LinearLayout android:orientation="horizontal" android:id="@id/buttonRow1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/btnTrending" android:onClick="Trending" style="@style/MainButton">
+                    <ImageView android:src="@drawable/featured" style="@style/MainButton_Image" />
+                    <TextView android:text="@string/movies_trending" style="@style/MainButton_Text" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnPopular" android:onClick="Popular" style="@style/MainButton">
+                    <ImageView android:src="@drawable/highly_rated" style="@style/MainButton_Image" />
+                    <TextView android:text="@string/movies_popular" style="@style/MainButton_Text" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnSearch" android:onClick="Search" style="@style/MainButton">
+                    <ImageView android:src="@drawable/search" style="@style/MainButton_Image" />
+                    <TextView android:text="@string/search" style="@style/MainButton_Text" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/buttonRow2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/btnMyMovies" android:onClick="Collection" style="@style/MainButton">
+                    <ImageView android:src="@drawable/trakt" style="@style/MainButton_Image" />
+                    <TextView android:text="@string/movies_collection" style="@style/MainButton_Text" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/btnMyWatchlist" android:onClick="Watchlist" style="@style/MainButton">
+                    <ImageView android:src="@drawable/trakt" style="@style/MainButton_Image" />
+                    <TextView android:text="@string/movies_watchlist" style="@style/MainButton_Text" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <include android:id="@id/downloadBarButton" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_alignParentTop="true" android:layout_toStartOf="@id/media_route_button" layout="@layout/downloads_button" />
+    <android.support.v7.app.MediaRouteButton android:id="@id/media_route_button" android:background="@drawable/button_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" />
+    <ViewStub android:id="@id/cast_minicontroller" android:layout="@layout/cast_controller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>
